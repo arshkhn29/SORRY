@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="hi" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apology Letter to Fatima | From Mohd Arsh</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Playfair Display for aesthetic serif headings, Inter for clean body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <!-- Canvas Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rose: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                            400: '#fb7185',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c',
+                        },
+                        lavender: {
+                            50: '#fbf7ff',
+                            100: '#f4ebff',
+                            200: '#e9d7fe',
+                            300: '#d6bbffb',
+                            400: '#b692f6',
+                            500: '#9b8afb',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        arabic: ['Amiri', 'serif'],
+                        hand: ['Reenie Beanie', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom animations & keyframes */
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); opacity: 1; }
+            50% { transform: translateY(-20px) rotate(10deg); }
+            100% { transform: translateY(-40px) rotate(-10deg); opacity: 0; }
+        }
+        
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 15px rgba(244, 63, 94, 0.3); }
+            50% { box-shadow: 0 0 30px rgba(244, 63, 94, 0.6); }
+        }
+
+        .bg-gradient-aesthetic {
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+        }
+
+        .bg-soft-rose {
+            background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+        }
+
+        .floating-element {
+            position: absolute;
+            pointer-events: none;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .envelope-shadow {
+            box-shadow: 0 20px 40px -15px rgba(225, 29, 72, 0.15);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fff1f2;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #fda4af;
+            border-radius: 10px;
+        }
+
+        .btn-dodge {
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+    </style>
+</head>
+<body class="bg-rose-50/60 text-gray-800 font-sans min-h-full flex flex-col justify-between selection:bg-rose-200 selection:text-rose-800 relative overflow-x-hidden">
+
+    <!-- Floating Background Particles (Hearts & Flowers) -->
+    <div id="particles-container" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
+
+    <!-- Header Navigation / Theme toggle -->
+    <header class="w-full max-w-4xl mx-auto p-4 md:p-6 flex justify-between items-center z-10">
+        <div class="flex items-center space-x-2">
+            <span class="text-2xl text-rose-500"><i class="fa-solid fa-heart"></i></span>
+            <span class="font-serif tracking-wide text-rose-900 font-semibold text-lg">Dil Se Maafi</span>
+        </div>
+        <div class="text-xs text-rose-700/70 bg-rose-100/80 px-3 py-1.5 rounded-full font-medium border border-rose-200">
+            <i class="fa-regular fa-envelope-open mr-1"></i> Personal Message
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="w-full max-w-3xl mx-auto px-4 py-4 md:py-8 z-10 flex-grow">
+        
+        <!-- TOP CARD: Greeting Banner -->
+        <div class="glass-card rounded-3xl p-6 md:p-8 mb-8 text-center envelope-shadow border-t-4 border-rose-400 relative overflow-hidden transform hover:scale-[1.01] transition duration-300">
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-rose-200/50 rounded-full blur-2xl"></div>
+            <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-purple-200/50 rounded-full blur-2xl"></div>
+
+            <span class="font-arabic text-2xl md:text-3xl text-rose-800 block mb-2">السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</span>
+            <h1 class="font-serif text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mb-2">
+                DEAR FATIMA
+            </h1>
+            <p class="text-sm md:text-base text-rose-600 font-medium tracking-wide">
+                <i class="fa-solid fa-feather-pointed mr-1"></i> Mohd Arsh ki taraf se ek sincere apology
+            </p>
+        </div>
+
+        <!-- LETTER BODY CARD -->
+        <div class="glass-card rounded-3xl p-6 md:p-10 mb-8 envelope-shadow relative">
+            
+            <!-- Stamp Badge -->
+            <div class="absolute top-6 right-6 hidden md:flex flex-col items-center justify-center w-20 h-20 border-2 border-dashed border-rose-300 rounded-lg transform rotate-6 bg-white/60 p-1">
+                <i class="fa-solid fa-stamp text-rose-400 text-xl mb-1"></i>
+                <span class="text-[9px] font-bold text-rose-800 uppercase tracking-tighter">Apology</span>
+                <span class="text-[8px] text-gray-500">From Arsh</span>
+            </div>
+
+            <!-- Heart icon header -->
+            <div class="flex items-center space-x-3 mb-6 pb-4 border-b border-rose-100">
+                <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center text-rose-600 font-bold text-lg">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div>
+                    <h2 class="font-serif text-lg font-semibold text-gray-800">Main Yeh Letter Kyon Likh Raha Hu</h2>
+                    <p class="text-xs text-gray-500">Kripya ise poora zaroor padhiyega</p>
+                </div>
+            </div>
+
+            <!-- Letter Paragraphs (Original Text Formatted Beautifully) -->
+            <div class="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base font-normal">
+                
+                <p class="bg-rose-50/50 p-4 rounded-xl border-l-4 border-rose-400 italic text-gray-800">
+                    "Main Mohd Arsh. Maine ye letter aapko <strong>SORRY</strong> bolne ke liye likha hai. Sayad mene aapko bhot baar pareshan kiya hai. Aapko bhot baar proposal bhja hai. Please uske liye mujhe maaf kardijiye."
+                </p>
+
+                <p>
+                    Aaj se aap meri <strong>sis aur frnd</strong> hai. Mujhe aapse sorry bhot dino se bolna tha par mujhe laga ki aap mere se baat nahi karoge isiliye maine aapko ye letter diya hai. Main dil se maafi maangta hun please mujhe maaf kardijiye. Aapka sukrguzaar rahunga.
+                </p>
+
+                <p>
+                    Jaisa aap mere baare main सोचते ho main aesa nahin hu. Main sayad baki logon se different hun. Mujhe bhot baar Class 9th main aana hota hai, lekin main isiliye nahi aata kabhi aap kuch galat samjo.
+                </p>
+
+                <div class="my-4 p-4 rounded-2xl bg-gradient-to-r from-rose-50 to-purple-50 border border-rose-100">
+                    <p class="text-xs font-semibold text-rose-800 uppercase tracking-wider mb-2"><i class="fa-solid fa-user-group mr-1"></i> School ke dost</p>
+                    <p class="text-sm text-gray-700">
+                        Main vese toh school main har kisi bacche se thoda bhot bol leta  hun. Lekin mere do sabse khaas insaan class 9th main hai — ek <strong>Ali</strong> jo bhai jesa hai aur ek <strong>Sarfaraz</strong> jo jigri yaar hai 3 saalon se (aur Ali toh bhot saalo se saath hai).
+                    </p>
+                </div>
+
+                <p>
+                     Bhot baar mujhe aesa lagta hai ki jab mai aapke aas paas hota hun toh aapko accha nahin lagta. Isiliye main aapse doori banane ki koshish karta hun lekin tum utne hi paas aa jate ho pata nahi kyon.
+                </p>
+
+                <p class="bg-amber-50/70 p-4 rounded-xl border border-amber-200/60 text-gray-800">
+                    <i class="fa-solid fa-heart-crack text-amber-500 mr-2"></i>
+                    Maine kabhi kisi ladki ko aaj tak proposal nahi bhja, <strong>sirf tum hi ek phli ladki ho</strong> jisko mene proposal bhja tha. Pata nahi mujhe kya ho gaya tha main kabhi bhi aese kaamon main nahi pada. Main toh ek seedha se ladka,maasum sa <strong>Hafiz-e-Quran</strong> hun. Lekin pata nahi shaitan ne kya kara mere saath jo mene aapko proposal bhja.
+                </p>
+
+                <p>
+                    Maine ye letter isiliye likha hai jisse aapko pata lag jaye ki <strong>mera koi galat irada ya galat behaviour nahi hai aapke saath. Main aesa wesa ladka nahi hun</strong>
+                </p>
+
+                <p class="font-serif text-lg font-semibold text-rose-700 pt-2 text-center md:text-left">
+                    PLEASE MUJHE MAAF KARDIJIYE 🥺
+                </p>
+
+            </div>
+
+            <!-- Footer note within letter -->
+            <div class="mt-8 pt-4 border-t border-rose-100 flex flex-col md:flex-row justify-between items-start md:items-center text-xs text-gray-500 space-y-2 md:space-y-0">
+                <span class="italic"><i class="fa-solid fa-pen-nib mr-1"></i> Note: Meri writing itni acchi nahi hai isiliye mene socha ki page pe likne se accha thodi coding ki skills dikhate hue likh kar aapko du.</span>
+                <span class="font-bold text-rose-800"><b>THANK YOU...</b></span>
+            </div>
+        </div>
+
+        <!-- INTERACTIVE DECISION / FORGIVENESS SECTION -->
+        <div id="decision-section" class="glass-card rounded-3xl p-6 md:p-8 text-center envelope-shadow relative overflow-hidden transition-all duration-500">
+            
+            <h3 class="font-serif text-2xl font-bold text-gray-900 mb-2">
+                Aapka Kya Faisla Hai Fatima?
+            </h3>
+            <p class="text-sm text-gray-600 mb-6">
+                Mujhe bata dena ki maaf kiya ya nahi... Niche se apna option choose karein:{<strong>JO AAPNE OPTION CHOOSE KARA HAI USE EK BAAR MUJHE MSG KARKE BATADIJIYE</STRONG>}
+            </p>
+
+            <!-- Action Buttons Container -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 relative min-h-[120px]" id="buttons-wrapper">
+                
+                <!-- ACCEPT BUTTON (A) -->
+                <button id="btn-accept" onclick="handleForgive()" class="w-full sm:w-auto min-w-[200px] px-8 py-4 bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700 text-white font-semibold rounded-2xl shadow-lg shadow-rose-200 transform hover:-translate-y-0.5 active:translate-y-0 transition duration-200 flex items-center justify-center space-x-3 group cursor-pointer z-20">
+                    <span class="bg-white/20 px-2.5 py-1 rounded-lg text-xs font-bold uppercase tracking-wider group-hover:bg-white/30 transition">Option A</span>
+                    <span class="text-base">Maaf Kar Diya ❤️</span>
+                </button>
+
+                <!-- REJECT BUTTON (F) - Dynamic Runaway Button -->
+                <button id="btn-reject" onmouseover="dodgeButton(this)" onclick="handleRejectClick()" class="btn-dodge w-full sm:w-auto min-w-[200px] px-8 py-4 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold rounded-2xl border border-gray-300 transition duration-150 flex items-center justify-center space-x-3 z-10">
+                    <span class="bg-gray-200 px-2.5 py-1 rounded-lg text-xs font-bold uppercase tracking-wider text-gray-600">Option F</span>
+                    <span class="text-base">Nahi Kiya 💔</span>
+                </button>
+
+            </div>
+
+            <!-- Optional Custom Message Response Area -->
+            <div class="mt-8 pt-6 border-t border-rose-100">
+                <button onclick="toggleCustomMsg()" class="text-xs text-rose-600 hover:text-rose-800 font-medium underline flex items-center justify-center mx-auto space-x-1">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <span>Ya kuch likhkar batana chahti hain? Click karein</span>
+                </button>
+
+                <div id="custom-msg-box" class="hidden mt-4 transition-all duration-300 max-w-md mx-auto">
+                    <textarea id="custom-text" rows="3" placeholder="Yahan apna message likhein (e.g. A ya koi aur baat)..." class="w-full p-3 text-sm rounded-xl border border-rose-200 focus:outline-none focus:ring-2 focus:ring-rose-400 bg-white/80 resize-none"></textarea>
+                    <button onclick="sendCustomMessage()" class="mt-2 w-full py-2 bg-rose-500 hover:bg-rose-600 text-white rounded-xl text-xs font-semibold shadow transition">
+                        Message Bhejo
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RESULT SCREEN 1: FORGIVEN (Option A Success) -->
+        <div id="success-card" class="hidden glass-card rounded-3xl p-8 text-center envelope-shadow border-2 border-rose-300 transform transition-all duration-500">
+            <div class="w-20 h-20 bg-rose-100 text-rose-500 rounded-full flex items-center justify-center text-4xl mx-auto mb-4 animate-bounce">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <h2 class="font-serif text-3xl font-bold text-rose-900 mb-2">JazakAllahu Khair, Fatima! 🤲✨</h2>
+            <p class="text-gray-700 text-base max-w-md mx-auto mb-6 leading-relaxed">
+                Dil se bohot bohot shukriya mujhe maaf karne ke liye. Aapka yeh ehsan main hamesha yaad rakhunga. Aaj se aapko meri taraf se kabhi koi pareshani nahi hogi.
+            </p>
+            <div class="inline-block bg-rose-100/80 px-6 py-3 rounded-2xl text-rose-800 font-semibold text-sm border border-rose-200">
+                <i class="fa-solid fa-check-circle text-rose-600 mr-2"></i> Aapne Choice 'A' (Maaf Kar Diya) Select Kiya Hai
+            </div>
+            <div class="mt-8">
+                <button onclick="resetView()" class="text-xs text-gray-500 hover:text-rose-600 underline">
+                    Dobara letter dekhein
+                </button>
+            </div>
+        </div>
+
+        <!-- RESULT SCREEN 2: CUSTOM MESSAGE SENT -->
+        <div id="custom-success-card" class="hidden glass-card rounded-3xl p-8 text-center envelope-shadow border-2 border-purple-300">
+            <div class="w-16 h-16 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+                <i class="fa-solid fa-paper-plane"></i>
+            </div>
+            <h2 class="font-serif text-2xl font-bold text-gray-800 mb-2">Shukriya Fatima!</h2>
+            <p id="displayed-response" class="text-gray-600 text-sm italic bg-purple-50 p-4 rounded-xl border border-purple-100 max-w-md mx-auto mb-4">
+                ""
+            </p>
+            <p class="text-xs text-gray-500">Aapka jawab dhyan se samajh liya gaya hai.</p>
+            <button onclick="resetView()" class="mt-6 text-xs text-rose-600 underline font-medium">
+                Wapas letter par jayein
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full text-center py-6 text-xs text-gray-500 z-10 border-t border-rose-100/50 mt-8">
+        <p>Sincere Apology Letter • Written by Mohd Arsh for Fatima</p>
+    </footer>
+
+    <!-- POPUP MODAL (For 'Nahi Kiya' click attempts) -->
+    <div id="pleading-modal" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-white rounded-3xl p-6 md:p-8 max-w-sm w-full text-center shadow-2xl transform scale-95 transition-transform duration-300" id="modal-content">
+            <div class="text-5xl mb-3">🥺</div>
+            <h3 class="font-serif text-xl font-bold text-gray-900 mb-2">Ek Baar Aur Soch Lijiye...</h3>
+            <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+                Maine dil se sorry bola hai. Main aage se kabhi pareshan nahi karunga. Koshish toh kar lo maaf karne ki... Please? 🙏
+            </p>
+            <div class="space-y-2">
+                <button onclick="closeModalAndForgive()" class="w-full py-3 bg-rose-500 hover:bg-rose-600 text-white rounded-xl font-semibold text-sm shadow transition">
+                    Acha thik hai, Maaf kar diya (A) ❤️
+                </button>
+                <button onclick="closeModal()" class="w-full py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-xl font-medium text-xs transition">
+                    Abhi bhi gussa hu (F) 😞
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Create Floating Background Elements (Hearts & Petals)
+        function createParticles() {
+            const container = document.getElementById('particles-container');
+            const particleTypes = ['❤️', '🌸', '✨', '🌹', '💖'];
+            
+            for (let i = 0; i < 18; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'floating-element';
+                particle.innerText = particleTypes[Math.floor(Math.random() * particleTypes.length)];
+                
+                // Random position and timing
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                particle.style.fontSize = `${Math.random() * 14 + 12}px`;
+                particle.style.animationDuration = `${Math.random() * 4 + 4}s`;
+                particle.style.animationDelay = `${Math.random() * 3}s`;
+                particle.style.opacity = (Math.random() * 0.5 + 0.3).toString();
+                
+                container.appendChild(particle);
+            }
+        }
+
+        // Initialize particles on load
+        window.addEventListener('load', createParticles);
+
+        // Runaway / Playful dodge effect for "Nahi Kiya (F)" button
+        let dodgeCount = 0;
+        function dodgeButton(btn) {
+            // Only dodge on desktop/hover to avoid broken touch behavior
+            if (window.innerWidth < 640) return;
+
+            if (dodgeCount < 3) {
+                const randomX = (Math.random() - 0.5) * 160;
+                const randomY = (Math.random() - 0.5) * 80;
+                btn.style.transform = `translate(${randomX}px, ${randomY}px)`;
+                dodgeCount++;
+            }
+        }
+
+        // Click Handler for "Nahi Kiya (F)" button
+        function handleRejectClick() {
+            const modal = document.getElementById('pleading-modal');
+            const modalContent = document.getElementById('modal-content');
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modalContent.classList.remove('scale-95');
+            modalContent.classList.add('scale-100');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('pleading-modal');
+            const modalContent = document.getElementById('modal-content');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+        }
+
+        function closeModalAndForgive() {
+            closeModal();
+            setTimeout(handleForgive, 300);
+        }
+
+        // Handle "Maaf Kar Diya (A)" Success Action
+        function handleForgive() {
+            // Hide decision section, show success card
+            document.getElementById('decision-section').classList.add('hidden');
+            const successCard = document.getElementById('success-card');
+            successCard.classList.remove('hidden');
+
+            // Trigger Confetti effect
+            if (typeof confetti === 'function') {
+                // Heart/Rose themed confetti bursts
+                confetti({
+                    particleCount: 80,
+                    spread: 70,
+                    origin: { y: 0.6 },
+                    colors: ['#f43f5e', '#fda4af', '#e11d48', '#ffffff', '#fb7185']
+                });
+
+                setTimeout(() => {
+                    confetti({
+                        particleCount: 40,
+                        angle: 60,
+                        spread: 55,
+                        origin: { x: 0 }
+                    });
+                    confetti({
+                        particleCount: 40,
+                        angle: 120,
+                        spread: 55,
+                        origin: { x: 1 }
+                    });
+                }, 250);
+            }
+        }
+
+        // Toggle Custom Message Box
+        function toggleCustomMsg() {
+            const box = document.getElementById('custom-msg-box');
+            box.classList.toggle('hidden');
+        }
+
+        // Send Custom Message
+        function sendCustomMessage() {
+            const text = document.getElementById('custom-text').value.trim();
+            if (!text) return;
+
+            document.getElementById('decision-section').classList.add('hidden');
+            const customSuccess = document.getElementById('custom-success-card');
+            document.getElementById('displayed-response').innerText = `"${text}"`;
+            customSuccess.classList.remove('hidden');
+
+            // Small celebratory confetti
+            if (typeof confetti === 'function') {
+                confetti({
+                    particleCount: 40,
+                    spread: 50,
+                    origin: { y: 0.7 }
+                });
+            }
+        }
+
+        // Reset view back to decision
+        function resetView() {
+            document.getElementById('success-card').classList.add('hidden');
+            document.getElementById('custom-success-card').classList.add('hidden');
+            document.getElementById('decision-section').classList.remove('hidden');
+            
+            // Reset dodge button position
+            const rejectBtn = document.getElementById('btn-reject');
+            rejectBtn.style.transform = 'translate(0px, 0px)';
+            dodgeCount = 0;
+        }
+    </script>
+</body>
+</html>
